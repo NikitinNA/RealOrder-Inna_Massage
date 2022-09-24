@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/mane.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <title>InnaMassage</title>
+</head>
+<body >
+
+<div class="display">
+    <div class="display__left"></div>    
+    <div class="display__right">
+        <div class="header">
+            <div class="container">
+                <div class="header__nav">
+                    <nav class="nav" id="nav">
+                    <a class="nav__link" href="#" data-modal="#modal__time">Время работы</a>
+                    <a class="nav__link" href="#" data-modal="#modal_item">Варианты процедур</a>
+                    <a class="nav__link" href="#" data-modal="#modal__map">Местоположение</a>
+                    <a class="nav__link" href="Https://vk.com/id223053507" target="_blank">Контакты</a>
+                </nav>
+            </div>
+        </div>
+
+        <div class="intro">
+            <div class="container">
+                <div class="intro__title">Массаж — это одно из самых тонких искусств — и дело не только в квалификации. Скорее, дело в любви.</div>
+                <div class="intro__subtitle">Успей записаться, места ограничены! | Назови кодовое слово "Таиланд" и получи скидку 10%</div>
+                
+            </div>
+            
+        </div>  
+        <a class="intro__link" href="#" data-modal="#modal_contact" target="_blank">записаться</a>
+    </div>
+    
+
+</div>    
+
+
+<!-- Modal -->
+    <div class="modal" id="modal_contact" >
+        <div class="modal__dialog modal__dialog--sm">
+    
+            <button class="modal__close" type="button" data-close>
+                <img src="./image/modal/close.svg" width="39px" height="39px" alt="close">
+            </button>
+        
+            <div class="contact">
+                <div class="contact__left">
+                    <h3 class="modal__title mb-0">Записаться</h3>
+                    <h4 class="modal__subtitle">Позвоните мне или отправьте сообщение</h4>
+                    <ul class="contact__info">
+                        <li class="contact__info-item">
+                            <img class="contact__info-icon" src="./image/contact/phone.svg" alt="">
+                            +7 (950) 670-86-70
+                        </li>
+                        <li class="contact__info-item">
+                            <img class="contact__info-icon" src="./image/contact/mail.svg" alt="">
+                            inna.nikitina.75@mail.ru
+                        </li>
+                    </ul>
+
+                    <ul class="contact__info">
+                        <li class="contact__info-item">
+                            <img class="contact__info-icon" src="./image/contact/telegram.svg" alt="">
+                            +7 (950) 670-86-70
+                        </li>
+                        <li class="contact__info-item">
+                            <img class="contact__info-icon" src="./image/contact/whatsapp.svg" alt="">
+                            +7 (950) 670-86-70
+                        </li>
+                        <li class="contact__info-item">
+                            <img class="contact__info-icon" src="./image/contact/viber.svg" alt="">
+                            +7(967) 350-29-10
+                        </li>
+                        <li class="contact__info-item">
+                            <img class="contact__info-icon" src="./image/contact/vk.svg" alt="">
+                            https://vk.com/id223053507
+                        </li>
+                    </ul>
+
+    
+                    <div class="text-right">
+                            
+                        <a class="btn" href="https://vk.com/write223053507" target="_blank">Запишись сейчас</a>
+                    </div>
+                </div>
+                <div class="contact__right">
+                    <img class="contact__img" src="../Massage/image/massage.jpg" alt="">
+                </div>
+            </div><!--/.contact -->
+            
+        
+    
+        </div><!--/.modal__dialog -->
+    </div><!--/.modal -->
+
+    <div class="modal" id="modal_item" >
+        <div class="modal__dialog modal__dialog--sm">
+    
+            <button class="modal__close" type="button" data-close>
+                <img src="./image/modal/close.svg" width="39px" height="39px" alt="close">
+            </button>
+    
+        
+            <div class="contact">
+                <div class="contact__left">
+                    <h3 class="modal__title mb-0">Виды массажа</h3>
+                    <h4 class="modal__subtitle">Со временем, этот список будет пополняться</h4>
+                    <ul class="contact__list">
+                        <li class="contact__prof" >
+                            Классический
+                        </li>
+                        <li class="contact__prof">
+                            Оздоровительный
+                        </li>
+                        <li class="contact__prof">
+                            Расслабляющий
+                        </li>
+                        <li class="contact__prof">
+                            Лимфодренажный
+                        </li>
+                        <li class="contact__prof">
+                            Массаж-уход лица
+                        </li>
+                    </ul>
+    
+                    
+                </div>
+                <div class="contact__right">
+                    <img class="contact__img" src="../Massage/image/face.jpg" alt="">
+                </div>
+            </div><!--/.contact -->
+            
+        
+    
+        </div><!--/.modal__dialog -->
+    </div><!--/.modal -->
+
+    <div class="modal" id="modal__map" >
+        <div class="modal__dialog modal__dialog--sm">
+    
+            <button class="modal__close" type="button" data-close>
+                <img src="./image/modal/close.svg"  width="39px" height="39px" alt="close">
+            </button>
+    
+        
+            <div class="contact">
+                <div class="contact__left">
+                    <h3 class="modal__title mb-0">Место встречи</h3>
+                    <h4 class="modal__subtitle">В данный момент, выезжаю непосредственно к вам в гости</h4>  
+                    <div class="modal__text">Так же, планирую снять небольшое помещение в Калининграде, актуальную информацию уточняйте.</div>
+                    <a class="btn" href="https://vk.com/write223053507" target="_blank">Запишись сейчас</a>
+                </div>
+                <div class="contact__right">
+                    <img class="contact__img" src="../Massage/image/inna.jpg" alt="">
+                </div>
+            </div><!--/.contact -->
+        </div><!--/.modal__dialog -->
+    </div><!--/.modal -->
+
+    <div class="modal" id="modal__time" >
+        <div class="modal__dialog modal__dialog--sm">
+    
+            <button class="modal__close" type="button" data-close="">
+                <img src="./image/modal/close.svg"  width="39px" height="39px" alt="close">
+            </button>
+    
+        
+            <div class="contact">
+                <div class="contact__left">
+                    <h3 class="modal__title mb-0">Время работы</h3>
+                    <h4 class="modal__subtitle">Работаю каждый день</h4>  
+                    <div class="modal__text">Работаю до с 15:00 до 21:00 ежедневно, любые праздничные дни и выходные обговариваются заранее, желательно записаться за 2-3 дня до назначенной даты.</div>
+                    <a class="btn" href="https://vk.com/write223053507" target="_blank">Запишись сейчас</a>
+                </div>
+                <div class="contact__right">
+                    <img class="contact__img" src="../Massage/image/stol.jpg" alt="">
+                </div>
+            </div><!--/.contact -->
+            
+        
+    
+        </div><!--/.modal__dialog -->
+    </div><!--/.modal -->
+
+    <!-- js -->
+<script src="js/app.js"></script>
+</body>
+</html>
