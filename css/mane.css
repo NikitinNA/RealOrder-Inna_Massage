@@ -1,8 +1,6 @@
 html {
     font-size: 15px;
     background-color: #111218;
-    background-image: url(../image/bg.jpg);
-    background-size: cover;
 }
 
 body {
@@ -31,8 +29,17 @@ p {
 }
 
 .display {
+    position: relative;
     display: flex;
     flex-direction: row;
+}
+.display__img {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    height: auto;
+    width: 100%;
 }
 .display__right{
     flex: 1;
@@ -407,6 +414,13 @@ p {
    
 }
 
+@media (max-width: 1280px) {
+    .display__img {
+        height: 100%;
+        width: auto;
+    }
+}
+
 @media (max-width: 1100px) {
 
    
@@ -439,7 +453,7 @@ p {
 @media (max-width: 960px) {
     
     .container {
-        min-height: 34vh;
+        min-height: 20vh;
     }
 
     .intro__title {
@@ -455,38 +469,100 @@ p {
 @media (max-width: 830px) {
 
     .modal__title {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     .contact__info {
-        font-size: 1.2rem;
+        font-size: 1rem;
 
     }
 }
 
 @media (max-width: 768px) {
 
+    .header {
+        height: 100%;
+        
+    }
+
     .container {
         min-height: 30vh;
     }
 
     .nav {
-        margin-bottom: 150px;
+        margin-bottom: 40px;
+        flex-wrap: wrap;
     }
 
     .nav__link {
-        font-size: 21px;
+        font-size: 15px;
     }
 
     .intro__title {
-        font-size: 33px;
-        margin-bottom: 125px;
+        font-size: 36px;
+        margin-bottom: 45px;
+    }
+
+    .intro__subtitle {
+        font-size: 27px;
+        margin-bottom: 30px;
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 630px) {
+    .contact {
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        background-color: bisque;
+    }
+    
+    .contact__left {
+        width: 100%;
+    }
+
+    .contact__right {
+        width: 0%;
+    }
+
+    .contact__img {
+        display: none;
+    }
+
+    .contact__info-item {
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 585px) {
     .container {
-        min-height: 70vh;
+        min-height: 34vh;
+    }
+
+    .modal__subtitle {
+        font-weight: 700;
+    }
+
+    .modal__text {
+        font-weight: 600;
+    }
+
+    .nav__link {
+        font-size: 16px;
+        margin-bottom: 5px;
+        flex-wrap: wrap;
+        position: relative;
+    }
+
+    .intro__title {
+        font-size: 24px;
+        margin-bottom: 25px;
+    }
+
+    .intro__subtitle {
+        font-size: 22px;
+        margin-bottom: 30px;
     }
 
     .modal__subtitle {
@@ -498,33 +574,37 @@ p {
     }
 }
 
-@media (max-width: 375px) {
-    .container {
-        min-height: 93vh;
+
+@media (max-width: 399px) {
+    .modal__title {
+        font-size: 1.5rem;
     }
 
-    .intro__title {
-        font-size: 43px;
-        margin-bottom: 150px;
+    .modal__subtitle {
+        font-size: 1rem;
     }
 
-    .intro__subtitle {
-        font-size: 29px;
+    .modal__text {
+        font-size: 15px;
+        margin-bottom: 40px;
     }
+
+
 }
+
 
 @media (max-width: 360px) {
 
     .container {
-        min-height: 100vh;
+        min-height: 15vh;
     }
 
     .intro__title {
-        font-size: 43px;
-        margin-bottom: 150px;
+        font-size: 19px;
+        margin-bottom: 50px;
     }
 
     .intro__subtitle {
-        font-size: 29px;
+        font-size: 19px;
     }
 }
