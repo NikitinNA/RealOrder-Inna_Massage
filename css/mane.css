@@ -581,6 +581,13 @@ p {
     }
 }
 
+@media (max-width: 386px) {
+    .nav__link {
+        margin-right: 150px;
+
+    }
+}
+
 @media (max-width: 399px) {
     .modal__title {
         font-size: 1.5rem;
