@@ -574,6 +574,12 @@ p {
     }
 }
 
+@media (max-width: 485px) {
+    .nav__link {
+        margin-right: 150px;
+    }
+}
+
 @media (max-width: 414px)
      .nav__link {
         margin-right: 100px;
@@ -582,16 +588,12 @@ p {
 
 @media (max-width: 386px) {
     .nav__link {
-        margin-right: 150px;
-    }
-}
-
-
-@media (max-width: 485px) {
-    .nav__link {
         margin-right: 50px;
     }
 }
+
+
+
 
 
 
