@@ -598,12 +598,7 @@ p {
 
 }
 
-@media (max-width: 386px) {
-    .nav__link {
-        margin-right: 50px;
 
-    }
-}
 
 
 @media (max-width: 360px) {
