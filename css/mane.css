@@ -587,12 +587,6 @@ p {
     }
 }
 
-@media (max-width: 386px) {
-    .nav__link {
-        margin-right: 50px;
-    }
-}
-
 @media (max-width: 399px) {
     .modal__title {
         font-size: 1.5rem;
@@ -606,9 +600,15 @@ p {
         font-size: 15px;
         margin-bottom: 40px;
     }
-
-
 }
+
+
+@media (max-width: 386px) {
+    .nav__link {
+        margin-right: 50px;
+    }
+}
+
 
 
 
