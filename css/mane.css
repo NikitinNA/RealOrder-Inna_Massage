@@ -574,6 +574,12 @@ p {
     }
 }
 
+@media (max-width: 414px)
+     .nav__link {
+        margin-right: 100px;
+    }
+}
+
 @media (max-width: 386px) {
     .nav__link {
         margin-right: 50px;
@@ -587,11 +593,7 @@ p {
     }
 }
 
-@media (max-width: 414px)
-     .nav__link {
-        margin-right: 100px;
-    }
-}
+
 
 @media (max-width: 399px) {
     .modal__title {
@@ -607,11 +609,6 @@ p {
         margin-bottom: 40px;
     }
 }
-
-
-
-
-
 
 
 @media (max-width: 360px) {
